@@ -1,0 +1,3 @@
+<plugin name="lipsum" as="xml">
+  <event name="view" />
+</plugin>

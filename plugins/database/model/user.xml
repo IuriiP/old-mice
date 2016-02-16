@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model name="user">
+    <table name="sys_user" charset="utf8" primary="id">
+        <fields>
+            <id type="int" autoincrement="4"></id>
+            <timestamp type="timestamp" default="CURRENT_TIMESTAMP" on_update="CURRENT_TIMESTAMP"></timestamp>
+            <nickname type="string" length="32"></nickname>
+            <md5pass type="string" length="32"></md5pass>
+            <newpass type="string" length="32"></newpass>
+            <email type="string" length="255"></email>
+            <emailcheck type="string" length="32"></emailcheck>
+            <cookie type="string" length="64"></cookie>
+            <access type="int" link="access"></access>
+            <refresh type="int"></refresh>
+        </fields>
+        <index>
+            <unique name="nickname" fields="nickname"></unique>
+            <unique name="email" fields="email"></unique>
+        </index>
+    </table>
+    <model name="access"></model>
+</model>

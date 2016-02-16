@@ -1,0 +1,28 @@
+<html>
+ <head><title replace="replace"><language name="Profile" /></title>
+ </head>
+ <body>
+ <event name="logged_in">
+  <event name="username" as="span" />
+  <form action="" method="post">
+   <button type="submit"><language name="Save" /></button>
+   <button type="reset"><language name="Reset" /></button>
+   <table border="1" width="100%">
+    <event name="profile">
+     <tr>
+      <td width="100%">
+     <field name="value" as="ul"  width="100%" editable="editable" />
+     </td>
+     <td>
+     <field name="public" type="checkbox" editable="editable" />
+     </td>
+     </tr>
+    </event>
+   </table>
+  </form>
+ </event>
+ <event name="logged_out">
+  <language name="Need login" />
+ </event>
+</body>
+</html>

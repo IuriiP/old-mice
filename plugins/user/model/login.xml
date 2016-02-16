@@ -1,0 +1,13 @@
+<html>
+ <head><title replace="replace"><language name="Login" /></title></head>
+ <body>
+  <form action="/main.html" method="post">
+   <table>
+    <tr><th><language name="Nickname" /></th><td><event name="security" element="login" as="input" type="text" placeholder="..." /></td></tr>
+    <tr><th><language name="Password" /></th><td><event name="security" element="password" as="input" type="password" placeholder="password" /></td></tr>
+    <tr><td></td>
+     <td><button type="submit" ><language name="Log in" /></button></td></tr>
+   </table>
+  </form>
+ </body>
+</html>

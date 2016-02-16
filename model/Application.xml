@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Bootstrap file. Don't touch it!
+
+Need initiate basic core plugins and start parsing process.
+-->
+<root>
+  <plugin name="database" engine="mysql:" host="localhost" db="database" user="username" pass="password" logsql="on" />
+  <plugin name="security" checkip="on" users="user" access="access" email="webmaster@mousite.org" />
+  <plugin name="config" table="config" expander="expand" />
+  <plugin name="language" table="language" default="en" />
+  <plugin name="theme" default="default" />
+</root>

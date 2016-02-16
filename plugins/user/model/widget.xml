@@ -1,0 +1,34 @@
+<html>
+  <body>
+    <event name="logged_out">
+      <div>
+        <a href="/user/login.html">
+          <language name="Login" />
+        </a>
+      </div>
+      <div>
+        <a href="/user/register.html">
+          <language name="Register" />
+        </a>
+      </div>
+      <div>
+        <a href="/user/recover.html">
+          <language name="Recover" />
+        </a>
+      </div>
+    </event>
+    <event name="logged_in">
+      <div>
+        <event name="username" href="/user/modify.html" as="a" />
+      </div>
+      <div>
+        <event name="accessname" />
+      </div>
+      <div>
+        <event name="security" element="logout" href="?" as="a">
+          <language name="Logoff" />
+        </event>
+      </div>
+    </event> 
+  </body>
+</html>

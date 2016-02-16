@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model name="access">
+    <table name="sys_access" charset="utf8" primary="id">
+        <fields>
+            <id type="int" autoincrement="2"></id>
+            <name type="string" length="255"></name>
+            <base type="int" link="access"></base>
+            <list type="text"></list>
+        </fields>
+    </table>
+</model>

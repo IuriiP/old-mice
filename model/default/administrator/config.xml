@@ -1,0 +1,12 @@
+<root>
+  <html>
+    <title><language name="Config" /></title>
+    <event name="select" table="sys_config" group="parent" as="ul" class="tablist">
+      <group name="parent" as="li" class="tabhead">
+        <field name="value">
+          
+        </field>
+      </group>
+    </event>
+  </html>    
+</root>

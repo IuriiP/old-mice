@@ -1,0 +1,20 @@
+/* CSS Document */
+#left {
+	float: left;
+	min-width: 160px;
+}
+#right {
+	float: right;
+	min-width: 160px;
+}
+#top,#bottom {
+}
+#header,#footer {
+	clear: both;
+	width: 100%;
+}
+#content {
+	width: auto;
+	overflow: auto;
+}
+

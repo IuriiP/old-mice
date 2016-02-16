@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model name="history">
+    <table name="history" table="sys_history" charset="utf8" primary="id">
+        <fields>
+            <id type="int" autoincrement="2"></id>
+            <uid type="int" link="user"></uid>
+            <parent type="string" length="255"></parent>
+            <action type="string" length="255"></action>
+            <text type="text"></text>
+            <timestamp type="timestamp" on_update="CURRENT_TIMESTAMP">CURRENT_TIMESTAMP</timestamp>
+        </fields>
+    </table>
+</model>

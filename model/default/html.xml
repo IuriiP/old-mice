@@ -1,0 +1,50 @@
+  <!--
+  Basic template for all pages if not exists personal templates.
+  -->
+<html>
+  <!--
+  Add some comments for debugging.
+  Remove or modify 'set' tag.
+  -->
+  <set name="comment">
+    <var>on</var>
+    <plugin>on</plugin>
+    <event>on</event>
+    <language>on</language>
+  </set>
+  <head>
+    <title>Basic carcass</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="generator" content="Mousite" />
+    <meta parameter="generator:version" content="2.03.19" />
+    <event name="head" />
+  </head>    
+  <body>
+    <block name="page">
+      <plugin>
+        <event name="view" />
+      </plugin>
+    </block>
+    <plugin name="container" as="div" id="header">
+      <event name="header" />
+    </plugin>
+    <plugin name="container" as="div" id="left">
+      <event name="widget" />
+    </plugin>
+    <plugin name="container" as="div" id="right">
+      <event name="widget" as="section" />
+    </plugin>
+    <div id="content">
+      <plugin name="container" as="div" id="top">
+        <event name="top" as="section" />
+      </plugin>
+      <use name="page" as="div" id="page" />
+      <plugin name="container" as="div" id="bottom">
+        <event name="bottom" as="section" />
+      </plugin>
+    </div>
+    <plugin name="container" as="div" id="footer">
+      <event name="footer" as="section" />
+    </plugin>
+  </body>
+</html>

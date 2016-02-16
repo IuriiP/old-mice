@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model name="security">
+    <model name="history"></model>
+    <model name="user"></model>
+    <model name="access"></model>
+    <sql name="security.refreshGroup" model="user" type="update">
+        <link name="access" alias="a"></link>
+        <set name="refresh">=1</set> 
+        <where type="OR">
+            <where>`user`.`access`=?</where>
+            <where>`a`.`base`=?</where>
+        </where>    
+    </sql>
+    <sql name="security.refreshAll" model="user" type="update">
+        <set name="refresh">1</set> 
+    </sql>
+    <sql name="security.history" model="history" type="insert">
+        <set name="uid">?</set> 
+        <set name="parent">?</set> 
+        <set name="action">?</set> 
+        <set name="text">?</set> 
+    </sql>
+</model>

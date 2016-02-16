@@ -1,0 +1,7 @@
+<json>
+  <meta>Not found</meta>
+<plugin name="lipsum" count="1" format="error">
+</plugin>
+<plugin name="lipsum" as="data">
+</plugin>
+</json>

@@ -1,0 +1,55 @@
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="generator" content="Mousite" />
+    <meta parameter="generator:version" content="2.03.19" />
+    <event name="head" />
+  </head>
+  <body>
+    <title>
+      <language name="Administrator" />
+    </title>
+    <plugin name="security">
+      <event name="error" as="div" id="message" />
+    </plugin>
+    <plugin name="administrator" as="div">
+      <plugin name="container" as="ul" id="adminmenu">
+      </plugin>
+      <ul class="menu_h">
+          <li>
+            <a href="/administrator/config.html">
+              <language name="Config" />
+            </a>
+          </li>
+          <li>
+            <a href="/administrator/plugins.html">
+              <language name="Plugins" />
+            </a>
+          </li>
+          <li>
+            <a href="/">
+              <language name="Main page" />
+            </a>
+          </li>
+          <li>
+            <a href="/administrator/help.html">
+              <language name="Help" />
+            </a>
+          </li>
+      </ul>
+      <skip as="ul" class="menu_h">
+          <li>
+            <a href="/">
+              <language name="Main page" />
+            </a>
+          </li>
+          <li>
+            <a href="/user/login.html">
+              <language name="Login" />
+            </a>
+          </li>
+      </skip>
+      <event name="view" as="div" />
+    </plugin>
+  </body>
+</html>

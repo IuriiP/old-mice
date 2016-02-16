@@ -1,0 +1,18 @@
+<html>
+ <event name="logged_in">
+  <event name="username" />
+  <table>
+  <event name="profile">
+    <tr>
+    <field name="name" as="td" />
+    <field name="value" as="td" />
+    </tr>
+  </event>
+  </table>
+ </event>
+ <event name="logged_out">
+  <language name="Need login" as="div">
+    <event name="username" />
+  </language>
+ </event>
+</html>
